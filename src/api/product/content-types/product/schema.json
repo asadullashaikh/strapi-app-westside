@@ -21,11 +21,6 @@
     "Description": {
       "type": "text"
     },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -37,11 +32,18 @@
         "audios"
       ]
     },
-    "rating": {
-      "type": "float"
-    },
     "count": {
       "type": "integer"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "electronics",
+        "men"
+      ]
+    },
+    "rating": {
+      "type": "float"
     }
   }
 }
